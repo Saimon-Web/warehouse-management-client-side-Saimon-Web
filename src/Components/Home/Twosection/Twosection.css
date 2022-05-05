@@ -1,0 +1,10 @@
+.icon{
+    background-color: rgb(220, 208, 208);
+    padding: 30px;
+    border-radius: 50%;
+}
+.line-one{
+    height: 4px;
+    width: 40px;
+    margin: 0 auto;
+}
