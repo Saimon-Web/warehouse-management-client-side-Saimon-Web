@@ -37,8 +37,8 @@ const Additem = () => {
         <div className=' form-box mx-auto'>
             <h2>Add Inventory</h2>
             <form action="" className='form-info ' onSubmit={handleAddItem}>
-                <label for="html">Your Name</label> <br />
-                <input type="text" name="name" placeholder='Your Name' id="" />
+                <label for="html">Name</label> <br />
+                 <input type="text" name="name" placeholder='Name' id="" />
                 <label for="html">Email</label> <br />
                 <input type="text" value={user?.email} name="email" placeholder='Your Email' id="" />
                 <label for="html">Supplier Name</label> <br />
@@ -46,14 +46,11 @@ const Additem = () => {
                 <label for="html">Price</label> <br />
                 <input type="text" name="price" placeholder='price' id="" />
                 <label for="html">Quantity</label> <br />
-                <input type="number" name="number" placeholder='Quantity' id="" />
-
-            
+                <input type="number" name="number" placeholder='Quantity' id="" />            
                 <label for="html">Description</label> <br />
                <input type="text" name="description" placeholder='Description' id="" />
                 <label for="html">Image Url</label> <br />
-               <input type="text" name="img" placeholder='Image URL' id="" />
-          
+               <input type="text" name="img" placeholder='Image URL' id="" />          
                 <input className='button ' type="submit" value="Add" />
             </form>
         </div>
