@@ -7,7 +7,7 @@ const InventoryDetail = () => {
     const { id } = useParams()
     const [inventory, setInventory] = useState({ qunatity: '' });
     useEffect(() => {
-        fetch(`http://localhost:5000/inventory/${id}`)
+        fetch(`https://shielded-brook-58570.herokuapp.com/inventory/${id}`)
             .then(res => res.json())
             .then(data => setInventory(data))
     }, [])
