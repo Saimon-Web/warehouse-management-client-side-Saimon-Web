@@ -1,4 +1,4 @@
-import React from 'react';
+   import React from 'react';
 import { confirmAlert } from 'react-confirm-alert';
 import { Link } from 'react-router-dom';
 import Product from '../DataLoaded/Product/Product';
@@ -13,16 +13,16 @@ const Manageitem = () => {
     const handleDelete=(id)=> {
     //    const conf=window.confirm('Are you sure you want to delete item?')
   
-        const url=`http://localhost:5000/inventory/${id}`
+        const url=` https://shielded-brook-58570.herokuapp.com/inventory/${id}`
         fetch(url,{
             method:"DELETE"
         })
         .then(res=> res.json())
         .then(data=> {
             console.log('success',data)
-        // delte from ui 
-        const conf=window.confirm('Are you sure?')
-        if(conf){
+        // delete from ui 
+           const conf=window.confirm('Are you sure?')
+             if(conf){
             const rest=products.filter(product => id !==product._id);
             setProducts(rest);
         }                  
@@ -43,8 +43,9 @@ const Manageitem = () => {
                 ></SingleManage>)
 
             }
-            <button className='addbtn w-50 mx-auto m-5  btn btn-danger'><Link to='/additem'>Add New Item</Link></button>
+           
         </div>
+        <button className='addbtn w-50 mx-auto m-5  btn btn-danger'><Link to='/additem'>Add New Item</Link></button>
 
     </div>
     );

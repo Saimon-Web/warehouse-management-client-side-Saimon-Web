@@ -18,7 +18,7 @@ const Additem = () => {
         const img=event.target.img.value;
         const description=event.target.description.value;
         const inventory={name,price,img,description,supplier,qunatity,email};
-        const url ='http://localhost:5000/inventory'
+        const url =' https://shielded-brook-58570.herokuapp.com/inventory'
         fetch(url,{
             method:'POST',
             headers:{

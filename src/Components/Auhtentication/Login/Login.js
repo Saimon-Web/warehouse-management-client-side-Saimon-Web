@@ -32,7 +32,7 @@ const Login = () => {
         const password = event.target.password.value;
         const email = event.target.email.value;
         await signInWithEmailAndPassword(email, password);
-        const { data } = await axios.post('http://localhost:5000/login', { email });
+        const { data } = await axios.post(' https://shielded-brook-58570.herokuapp.com/login', { email });
         console.log(data)
         localStorage.setItem('accessToken', data.accessToken)
 

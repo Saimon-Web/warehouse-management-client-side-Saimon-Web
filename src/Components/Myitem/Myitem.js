@@ -14,7 +14,7 @@ const Myitem = () => {
     useEffect(() => {
         const getMyitem = async () => {
             const email = user?.email;
-            const url = `http://localhost:5000/mypath?email=${email}`;
+            const url = ` https://shielded-brook-58570.herokuapp.com/mypath?email=${email}`;
             try{
                 const{data}=await axios.get(url,{
                     headers:{
@@ -35,7 +35,7 @@ const Myitem = () => {
     }, [user])
 
     const handleDelete=(id)=> {
-        const url=`http://localhost:5000/inventory/${id}`
+        const url=` https://shielded-brook-58570.herokuapp.com/inventory/${id}`
         fetch(url,{
             method:"DELETE"
         })

@@ -44,7 +44,7 @@ const InventoryDetail = () => {
         const stocknumber = numberRef.current.value;
         const qunatity = parseInt(stocknumber) + numberOne;
         const inventory = { qunatity };
-        const url = `http://localhost:5000/inventory/${id}`
+        const url = ` https://shielded-brook-58570.herokuapp.com/inventory/${id}`
         fetch(url, {
             method: "PUT",
             headers: {
