@@ -20,7 +20,7 @@ const InventoryDetail = () => {
         const inventory = {
             qunatity: newNumber
         }
-        const url = `http://localhost:5000/inventory/${id}`
+        const url = `https://shielded-brook-58570.herokuapp.com/inventory/${id}`
         fetch(url, {
             method: "PUT",
             headers: {
