@@ -15,7 +15,7 @@ const Register = () => {
     ] = useCreateUserWithEmailAndPassword(auth, { sendEmailVerification: true });
     const [updateProfile, updating, error1] = useUpdateProfile(auth);
 
-    console.log(user.displayName)
+    // console.log(user.displayName)
     if (user) {
         navigate('/')
     }
