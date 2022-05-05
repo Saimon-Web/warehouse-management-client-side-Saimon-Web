@@ -44,8 +44,11 @@ const Manageitem = () => {
 
             }
            
-        </div>
-        <button className='addbtn w-50 mx-auto m-5  btn btn-danger'><Link to='/additem'>Add New Item</Link></button>
+</div>
+   
+
+  <Link to='/additem'><button className='addbtn w-50 mx-auto m-5  btn btn-danger'>ADD NEW ITEM</button></Link>   
+        
 
     </div>
     );
