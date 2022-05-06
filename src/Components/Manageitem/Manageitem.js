@@ -12,7 +12,8 @@ const Manageitem = () => {
     console.log(products.length)
     const handleDelete=(id)=> {
     //    const conf=window.confirm('Are you sure you want to delete item?')
-  
+    const conf=window.confirm('Are you sure?')
+    if(conf){
         const url=` https://shielded-brook-58570.herokuapp.com/inventory/${id}`
         fetch(url,{
             method:"DELETE"
@@ -21,12 +22,12 @@ const Manageitem = () => {
         .then(data=> {
             console.log('success',data)
         // delete from ui 
-           const conf=window.confirm('Are you sure?')
-             if(conf){
-            const rest=products.filter(product => id !==product._id);
-            setProducts(rest);
-        }                  
-        })
+        const rest=products.filter(product => id !==product._id);
+        setProducts(rest);
+                          
+        })  
+    }   
+        
      }
         
     
