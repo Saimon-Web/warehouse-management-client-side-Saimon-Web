@@ -71,7 +71,10 @@ const InventoryDetail = () => {
                                 <p className='fs-4'>{inventory.description}</p>
                                 <p className='fs-3'>Price:{inventory.price}</p>
                                 <p className='fs-3'>Quantity:{inventory.qunatity}</p>
-                                <button onClick={deliveredHandle} className='btn btn-danger'>Delivered</button>
+ {inventory.qunatity===0? <button className='btn btn-success'>sold</button>
+:
+<button onClick={deliveredHandle} className='btn btn-danger'>Delivered</button>
+}
                                 <form action="" className='mt-3' onSubmit={handleStock}>
                                     <input className='mb-3 p-2' type="number" ref={numberRef} name="qunatity" placeholder='stock number' id="" /> <br />
                                     <input className='btn btn-danger' type="submit" value="stocked" />
