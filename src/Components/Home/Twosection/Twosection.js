@@ -8,7 +8,7 @@ const Twosection = () => {
             <div className="container-fluid bg-light py-5">
                 <p className='text-center text-gray fs-5 p-0'><span>Because We are ultra creative agency</span></p>
                 <h1 className='text-center text-danger fs-1 '>WHY CHOOSE US</h1>
-                <div className='line w-25 text-center bg-danger mb-5'></div>
+                <div className='line w-25 text-center mx-auto bg-danger mb-5'></div>
                 <div className="row">
                     <div className="col-lg-4 col-sm-12">
                         <FontAwesomeIcon className='icon fs-3 text-danger' icon={faCar}></FontAwesomeIcon>
