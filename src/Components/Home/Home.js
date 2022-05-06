@@ -5,6 +5,7 @@ import './Home.css'
 import OneSection from './OneSection/OneSection';
 import Twosection from './Twosection/Twosection';
 const Home = () => {
+
     return (
         <div>
          

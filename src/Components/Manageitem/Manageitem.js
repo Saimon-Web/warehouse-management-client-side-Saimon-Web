@@ -1,4 +1,5 @@
    import React from 'react';
+import { Spinner } from 'react-bootstrap';
 import { confirmAlert } from 'react-confirm-alert';
 import { Link } from 'react-router-dom';
 import Product from '../DataLoaded/Product/Product';
@@ -35,17 +36,26 @@ const Manageitem = () => {
         
         <div className='container'>
                   
-        <div className="row">
+      {
+          products.length ===0?<div>
+              <Spinner animation="border" role="status">
+          <span className="visually-hidden">Loading...</span>
+      </Spinner>
+          </div>
+          :
+          <div className="row">
            
-            {
-                products.map(product => <SingleManage
-                    product={product}
-                    handleDelete={handleDelete}
-                ></SingleManage>)
+          {
+              products.map(product => <SingleManage
+                  product={product}
+                  handleDelete={handleDelete}
+              ></SingleManage>)
 
-            }
+          }
+          </div>
+      }
            
-</div>
+
    
 
   <Link to='/additem'><button className='addbtn w-50 mx-auto m-5  btn btn-danger'>ADD NEW ITEM</button></Link>   

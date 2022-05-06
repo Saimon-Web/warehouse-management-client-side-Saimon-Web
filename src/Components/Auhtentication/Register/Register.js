@@ -5,6 +5,7 @@ import './Register.css';
 import { useCreateUserWithEmailAndPassword, useSendEmailVerification, useUpdateProfile } from 'react-firebase-hooks/auth';
 import { toast } from 'react-toastify';
 import Social from '../Social/Social';
+import Loading from '../Loading/Loading';
 const Register = () => {
     const navigate = useNavigate();
     const [
@@ -14,7 +15,9 @@ const Register = () => {
         error,
     ] = useCreateUserWithEmailAndPassword(auth, { sendEmailVerification: true });
     const [updateProfile, updating, error1] = useUpdateProfile(auth);
-
+ if(loading){
+     return <Loading></Loading>
+ }
     // console.log(user.displayName)
     if (user) {
         navigate('/')
