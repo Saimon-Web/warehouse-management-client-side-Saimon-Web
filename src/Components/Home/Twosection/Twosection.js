@@ -4,7 +4,7 @@ import { faCar,faHandshake,faCreditCard,faAslInterpreting,faPaperPlane,faPuzzleP
 import './Twosection.css'
 const Twosection = () => {
     return (
-        <div>
+        <div className='mt-4'>
             <div className="container-fluid bg-light py-5">
                 <p className='text-center text-gray fs-5 p-0'><span>Because We are ultra creative agency</span></p>
                 <h1 className='text-center text-danger fs-1 '>WHY CHOOSE US</h1>

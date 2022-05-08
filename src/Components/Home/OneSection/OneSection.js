@@ -12,7 +12,7 @@ const OneSection = () => {
                     <p className='w-100'>Being developed on Visual Composer Drag and Drop Page Builder, It is fully responsive on any device. Unique designs, captivating sliders, and innovative website building tools work seamlessly to boost your business online.</p>
                 </div>
                 
-                <div className='col-lg-6 p-5 '>
+                <div className='box-stock col-lg-6 p-5 '>
                   <div className='row stocks d-flex '>
                   <div className= 'col-lg-6 stock p-2'>
                    <p>Vehicle Stocks</p>

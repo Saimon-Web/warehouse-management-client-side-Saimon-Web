@@ -28,4 +28,12 @@ z-index: 3;
     .stocks{
       border: none;
     }
+    .box-stock {
+        margin-top: -20px;
+    }
+    .main-section{
+        margin-top: 100px;
+        background-image: url(../../../image/second.jpg);
+        height: 900px;
+    }
 }
